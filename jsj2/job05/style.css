@@ -1,0 +1,11 @@
+body {
+  min-height: 4096px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 15px;
+  width: 0;
+  background-color: red;
+}
