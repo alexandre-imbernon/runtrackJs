@@ -1,0 +1,33 @@
+[
+	{ 
+	"id": "jdupont", 
+	"nom": "Dupont",
+	"prénom": "Jean",
+	"email": "jean.dupont@laplateforme.io"
+},
+
+	{ 
+	"id": "pmartin", 
+	"nom": "Martin",
+	"prénom": "Pierre",
+	"email": "pierre.martin@laplateforme.io"
+},
+	{ 
+	"id": "mlefevre", 
+	"nom": "Lefevre",
+	"prénom": "Marie",
+	"email": "marie.lefevre@laplateforme.io"
+},
+	{ 
+	"id": "srousseau", 
+	"nom": "Rousseau",
+	"prénom": "Sophie",
+	"email": "sophie.rousseau@laplateforme.io"
+},
+	{ 
+	"id": "pmoreau", 
+	"nom": "Moreau",
+	"prénom": "Paul",
+	"email": "paul.moreau@laplateforme.io"
+}
+]
