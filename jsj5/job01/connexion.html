@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j5js</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="InscForm" action="" onsubmit="return inscription()" method="post">
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required oninput="validateEmail()">
+      <div id="emailError" class="error"></div>
+    </div>
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required oninput="validatePassword()">
+      <div id ="passwordError" class="error"></div>
+    </div>
+    </form><br>
+    <button id="reussite" type="submit">Se Connecter</button>
+    <div id="successMessage" style="display: none; color: green;"></div>
+    <br><br><a href="inscription.html">Inscription</a>
+    <script src="script.js"></script>
+  </body>
+  </html>
