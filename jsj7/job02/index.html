@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Materialize</title>
+</head>
+<body>
+  <header> 
+    <nav class="#f57f17 yellow darken-4"> 
+      <ul class="right hide-on-med-and-down">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html">Inscription</a></li>
+      <li><a href="index.html">Connexion</a></li>
+      <li><a href="index.html">Rechercher</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>    
+    <section>
+      <form>
+        <p>Vous êtes :</p>
+        <div>
+          <input type="radio" id="contactChoice1" name="contact" value="email" />
+          <label for="contactChoice1">Un homme</label>
+          <input type="radio" id="contactChoice2" name="contact" value="telephone" />
+          <label for="contactChoice2">Une femme</label>
+        </div>
+        <br>
+      </form>        
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field">
+              <label for="first_name">Prénom:</label>
+              <input placeholder="Saisissez votre Prénom" id="prenom" type="text" class="validate">
+            </div>
+            <div class="input-field">
+              <label for="first_name">Nom:</label>
+              <input placeholder="Saisissez votre Nom" id="nom" type="text" class="validate" size="23">
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="first_name">Adresse:</label>
+            <input placeholder="Saisissez votre Adresse" id="adresse" type="text" class="validate">
+          </div>
+          <label for="email">Mail:</label>
+          <input placeholder="Saisissez votre Mail" type="email" id="email" pattern=".+@example\.com" size="23" required />
+          <div>
+            <label for="pass">Mot de passe:</label>
+            <input placeholder="Saisissez votre mdp" type="password" id="password" minlength="8" size="15" required />
+          </div>
+          <br>
+          <input type="submit" value="Valider" />
+          <div><br></div>
+          <fieldset>
+            <legend>Sélectionnez vos passions</legend>
+            <div>
+              <input type="checkbox" id="info" name="interest" value="info" checked />
+              <label for="info">Informatique</label>
+            </div>
+            <div>
+              <input type="checkbox" id="voyages" name="interest" value="voyages" />
+              <label for="voyages">Voyages</label>
+            </div>
+            <div>
+              <input type="checkbox" id="sport" name="interest" value="sport" />
+              <label for="sport">Sport</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lecture" name="interest" value="lecture" />
+              <label for="lecture">Lecture</label>
+            </div>
+          </fieldset>    
+          <br>
+          <button>Soumettre</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <br>
+  <footer>
+    <a href="index.html">Accueil</a>
+    <a href="index.html">Inscription</a>
+    <a href="index.html">Connexion</a>
+    <a href="index.html">Rechercher</a>
+  </footer>
+</body>
+</html>
