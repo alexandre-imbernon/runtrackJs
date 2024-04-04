@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <title>Materialize</title>
 </head>
 <body>
   <header>  
-    <nav> 
-    <a href="index.html">Accueil</a>
-    <a href="index.html">Inscription</a>
-    <a href="index.html">Connexion</a>
-    <a href="index.html">Rechercher</a>
-  </nav>
+    <nav class="bg-blue-500 text-white p-5 text-right space-x-4">
+      <a href="index.html" class="inline-block">Accueil</a>
+      <a href="index.html" class="inline-block">Inscription</a>
+      <a href="index.html" class="inline-block">Connexion</a>
+      <a href="index.html" class="inline-block">Rechercher</a>
+    </nav>
   </header>
   <main>    
     <section>
@@ -47,6 +49,11 @@
           <div>
             <label for="pass">Mot de passe:</label>
             <input placeholder="Saisissez votre mdp" type="password" id="password" minlength="8" size="15" required />
+          </div>
+          <div>
+            <label for="pass">Confirmez votre mot de passe:</label>
+            <input type="password" placeholder="Confirmez votre mdp" id="confirm_password" required>
+            <button type="submit" class="pure-button pure-button-primary">Confirm</button>
           </div>
           <br>
           <input type="submit" value="Valider" />

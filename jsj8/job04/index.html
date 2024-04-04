@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <title>Materialize</title>
+</head>
+<body>
+  <header>   
+    <nav class="bg-blue-500 text-white p-5 text-right space-x-4">
+      <a href="index.html" class="inline-block">Accueil</a>
+      <a href="index.html" class="inline-block">Inscription</a>
+      <a href="index.html" class="inline-block">Connexion</a>
+      <a href="index.html" class="inline-block">Rechercher</a>
+    </nav>
+  </header>
+  <main class="flex justify-center items-center">
+    <section class="shadow-md p-4">
+      <br>
+      Vous êtes:
+      <div class="flex flex-wrap">
+        <div class="flex items-center me-4">
+          <input id="red-radio" type="radio" class="w-4 h-4 text-blue-500 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" name="gender">
+          <label for="red-radio" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Un homme</label>
+        </div>
+        <div class="flex items-center me-4">
+          <input id="green-radio" type="radio" class="w-4 h-4 text-pink-500 bg-gray-100 border-gray-300 focus:ring-pink-500 dark:focus:ring-pink-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" name="gender">
+          <label for="green-radio" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Une femme</label>
+        </div>
+      </div>      
+      <form class="w-full max-w-lg">
+        <br>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 relative text-gray-400 focus-within:text-gray-600 block">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="prenom">
+              Prénom:
+            </label>
+            <div class="flex items-center">
+              <svg class="h-8 w-8 text-blue-500 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="12" cy="7" r="4" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+              <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="prenom" type="text" placeholder="Saisissez votre Prénom">
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="nom">
+              Nom:
+            </label>
+            <div class="flex items-center">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="12" cy="7" r="4" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+              <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nom" type="text" placeholder="Saisissez votre Nom">
+            </div>
+          </div>
+        </div>        
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="adresse">
+              Adresse:
+            </label>
+            <div class="flex items-center">
+              <svg class="h-8 w-8 text-blue-500 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11" />
+              </svg>
+              <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="adresse" type="text" placeholder="Saisissez votre Adresse">
+            </div>
+          </div>
+        </div>        
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+              Mail:
+            </label>
+            <div class="flex items-center">
+            <svg class="h-8 w-8 text-blue-500 mr-2"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+            <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Saisissez votre Mail" type="email" id="email" pattern=".+@example\.com" size="23" required />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="password">
+              Mot de passe:
+            </label>
+            <div class="flex items-center">
+              <svg class="h-8 w-8 text-blue-500 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3" />  <path d="M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6" />  <path d="M12 11v2a14 14 0 0 0 2.5 8" />  <path d="M8 15a18 18 0 0 0 1.8 6" />  <path d="M4.9 19a22 22 0 0 1 -.9 -7v-1a8 8 0 0 1 12 -6.95" /></svg>
+              <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="password" placeholder="Choisissez votre mdp" id="confirm_password" required>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="confirm_password">
+              Confirmez votre mot de passe:
+            </label>
+            <input class="appearance-none block w-full bg-blue-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="password" placeholder="Confirmez votre mdp" id="confirm_password" required>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <fieldset>
+              <legend class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Sélectionnez vos passions</legend>
+              <div class="mt-2">
+                <input type="checkbox" id="info" name="interest" value="info" checked />
+                <label class="text-gray-700" for="info">Informatique</label>
+              </div>
+              <div class="mt-2">
+                <input type="checkbox" id="voyages" name="interest" value="voyages" />
+                <label class="text-gray-700" for="voyages">Voyages</label>
+              </div>
+              <div class="mt-2">
+                <input type="checkbox" id="sport" name="interest" value="sport" />
+                <label class="text-gray-700" for="sport">Sport</label>
+              </div>
+              <div class="mt-2">
+                <input type="checkbox" id="lecture" name="interest" value="lecture" />
+                <label class="text-gray-700" for="lecture">Lecture</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Soumettre</button>
+          </div>
+        </div>
+      </form>      
+      </div>
+    </section>
+  </main>
+  <br>
+  <footer class="bg-blue-500 text-white p-5 text-left space-x-4">
+    <a href="index.html">Accueil</a>
+    <a href="index.html">Inscription</a>
+    <a href="index.html">Connexion</a>
+    <a href="index.html">Rechercher</a>
+  </footer>
+</body>
+</html>
