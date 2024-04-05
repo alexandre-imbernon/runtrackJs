@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice École Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/modérateur.js"></script>
+    <Script src="../Js/administrateur.js"></Script>
+</head>
+<body>
+<header>   
+    <nav class="navbar navbar-expand navbar-dark bg-primary d-flex justify-content-between">
+        <a class="navbar-brand" href="https://laplateforme.io/">La Plateforme_</a>
+        <p class="mb-0 text-white">ESPACE ADMINISTRATEUR</p>
+    </nav>
+</header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3" id="user1">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-success">Accepter</button>
+                    <button class="btn btn-danger">Refuser</button>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="user2">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-success">Accepter</button>
+                    <button class="btn btn-danger">Refuser</button>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="user3">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-success">Accepter</button>
+                    <button class="btn btn-danger">Refuser</button>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="user4">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-success">Accepter</button>
+                    <button class="btn btn-danger">Refuser</button>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="user5">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-success">Accepter</button>
+                    <button class="btn btn-danger">Refuser</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">Identifiant</th>
+                            <th scope="col">Attribut</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-table-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <form id="add-user-form">
+                <div class="form-group">
+                    <label for="username">Identifiant</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Attribut</label>
+                    <select class="form-control" id="role" required>
+                        <option value="Modérateur">Modérateur</option>
+                        <option value="Administrateur">Administrateur</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Ajouter</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>   
+    <nav class="navbar navbar-expand navbar-dark bg-primary d-flex justify-content-between">
+        <a class="navbar-brand" href="https://laplateforme.io/">La Plateforme_</a>
+        <p class="mb-0 text-white">Inscription</p>
+    </nav>
+</header>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form name="InscForm" action="" onsubmit="return inscription()" method="post">
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control" required oninput="validatePrenom()">
+                    <div id="prenomError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" class="form-control" required oninput="validateNom()">
+                    <div id="nomError" class="error"></div> 
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required oninput="validateEmail()">
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" name="adresse" class="form-control" required oninput="validateAdresse()">
+                    <div id="adresseError" class="error"></div> 
+                </div>
+                <div class="form-group">
+                    <label for="codepost">Code Postal:</label>
+                    <input type="number" id="codepost" name="codepost" class="form-control" required oninput="validateCodepost()">
+                    <div id="codepostError" class="error"></div> 
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de Passe:</label>
+                    <input type="password" id="password" name="password" class="form-control" required oninput="validatePassword()">
+                    <div id="passwordError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="passwordconf">Confirmation du Mot de Passe:</label>
+                    <input type="password" id="passwordconf" name="passwordconf" class="form-control" required oninput="validatePasswordconf()">
+                    <div id="passwordconfError" class="error"></div>
+                </div>
+                <button id="valider" type="submit" class="btn btn-primary">S'inscrire</button>
+                <br><br><small id="emailHelp" class="form-text text-muted">Déjà inscrit ? Cliquez <a href="../../index.html">ici</a></small>
+                <script src="../js/inscription.js"></script>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
